@@ -1,11 +1,13 @@
 import struct
 import os
 import pygame
+import time
 
 
 pygame.init()
-scherm1 = pygame.display.set_mode((1100,1100))
-scherm1.fill((255,255,255))
+
+screen = pygame.display.set_mode((800, 800))
+
 
 
 white = ((255,255,255))
@@ -36,47 +38,73 @@ coffee_brown =((200,190,140))
 moon_glow = ((235,245,255))
 
 
+
+smallestX = 0
+smallestY = 0
+BiggestX = 0
+BiggestY = 0
+
+
 def drawpmd(filename, scherm, c):
 
     size = os.path.getsize(filename)
-
+    scale = 6
+    print ("Drawing {} size is {}".format(filename, size))
     t = 0
     file =  open(filename,"rb")
 
     xy = []
 
     p = 0
+    smallestX = 0
+    smallestY = 0
+
 
     while True:
-        v = float(struct.unpack('i', file.read(4))[0])/1000000
+        f = struct.unpack('i', file.read(4))[0]
+        v = int(f / 10000000)
+
+        if t < 8:
+            print (v)
         if p == 0:
             p = 1
             x = v
+            if x < smallestX:
+                smallestX = x
+
         else:
             p = 0
             y = v
-            xy.append([x,y])
+            if y < smallestY:
+                smallestY = y
 
-            pygame.draw.circle(scherm, c, (int(x/4)+500,int(y/4)+400), 10)
-            
-            
+            xy.append([x,y])
+            try:
+                pygame.draw.circle(scherm, c, (int(x) + 360, int(y) + 360), 3)
+            except:
+                print ("err; {} - {}".format(x,y))
+
         t = t + 1
         if t == int(size/4):
+            print ("SmallestX: {}   SmallestY: {}".format(smallestX, smallestY))
             break
-c = 300
-
-drawpmd("D:\\quincy\\apple00\\LA.pmd", scherm1, red)
-c = c + 100
-drawpmd("D:\\quincy\\apple00\\LE.pmd", scherm1, purple)
-c = c + 100
-drawpmd("D:\\quincy\\apple00\\LP.pmd", scherm1, orange)
-c = c + 100
-drawpmd("D:\\quincy\\apple00\\LL.pmd", scherm1, yellow)
 
 
+screen.fill(black)
+
+drawpmd("sd//cup0000//LC.pmd", screen, red)
+drawpmd("sd//cup0000//LU.pmd", screen, purple)
+drawpmd("sd//cup0000//LP.pmd", screen, orange)
+drawpmd("sd//testbur//S01.pmd", screen, blue)
 
 pygame.display.flip()
 
+while True:
+
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            sys.exit()
 
 
     
