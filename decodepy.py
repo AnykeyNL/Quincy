@@ -43,12 +43,12 @@ smallestX = 0
 smallestY = 0
 BiggestX = 0
 BiggestY = 0
-
+header = 13
 
 def drawpmd(filename, scherm, c):
 
     size = os.path.getsize(filename)
-    scale = 6
+    scale = 10
     print ("Drawing {} size is {}".format(filename, size))
     t = 0
     file =  open(filename,"rb")
@@ -59,13 +59,41 @@ def drawpmd(filename, scherm, c):
     smallestX = 0
     smallestY = 0
 
+    file.read(header)
+
 
     while True:
-        f = struct.unpack('i', file.read(4))[0]
-        v = int(f / 10000000)
+        #input_data = file.read(4)
 
-        if t < 8:
+        b1 = ord(file.read(1))
+        b2 = ord(file.read(1))
+
+        #pygame.draw.circle(scherm, ((240,0,255)), (int(b1), int(b2)), 3)
+
+        v = int.from_bytes(file.read(2), byteorder='big', signed=True)
+
+
+        print ("{} - {} - {}".format(b1, b2, v))
+
+
+        # try:
+        #     b1 = ord(file.read(1))
+        #     b2 = ord(file.read(1))
+        #     b3 = ord(file.read(1))
+        #     b4 = ord(file.read(1))
+        #
+        #     v = (b3*256) + b4
+        #
+        # except:
+        #     print ("err")
+        #     v = 0
+
+        v = (v / 100)
+        v = v + 320
+        if t < 20:
             print (v)
+
+
         if p == 0:
             p = 1
             x = v
@@ -80,21 +108,21 @@ def drawpmd(filename, scherm, c):
 
             xy.append([x,y])
             try:
-                pygame.draw.circle(scherm, c, (int(x) + 360, int(y) + 360), 3)
+                pygame.draw.circle(scherm, c, (int(x) , int(y) ), 3)
             except:
                 print ("err; {} - {}".format(x,y))
 
         t = t + 1
-        if t == int(size/4):
+        if t == int((size-header)/4):
             print ("SmallestX: {}   SmallestY: {}".format(smallestX, smallestY))
             break
 
 
 screen.fill(black)
 
-drawpmd("sd//cup0000//LC.pmd", screen, red)
-drawpmd("sd//cup0000//LU.pmd", screen, purple)
-drawpmd("sd//cup0000//LP.pmd", screen, orange)
+# drawpmd("sd//cup0000//LC.pmd", screen, red)
+# drawpmd("sd//cup0000//LU.pmd", screen, purple)
+# drawpmd("sd//cup0000//LP.pmd", screen, orange)
 drawpmd("sd//testbur//S01.pmd", screen, blue)
 
 pygame.display.flip()

@@ -13,9 +13,9 @@ The cards have a QR code on them. The QR codes return: !A[object], !B[letter]000
 The object names directly refer to the folder name of the object on the SD Card.
 
 Examples:
-!Azebra00
-!Amonkey0
-!Astrawbe
+- !Azebra00
+- !Amonkey0
+- !Astrawbe
 
 # .IAS file
 In each folder is an .ias file. Which seems to be the main program file. This file is normal asci encoded.
@@ -32,4 +32,9 @@ C = Capture, wait till certain card is shown
  the .snd are the sound files. These are in the format of 16-bit PCM (Intel Endian) with a sample rate of 16.000Hz in mono.
  
  # .pmd file
- these .pmd files are the files that actually do the drawing. I am still working on decoding these. But they mainly seem to consist of 3 byte integers leaded by a 
+ these .pmd files are the files that actually do the drawing. I am still working on decoding these. But they mainly seem to consist of 4 byte integers.
+
+header:
+byte[1] = 001
+
+byte[2] = Number of segments
