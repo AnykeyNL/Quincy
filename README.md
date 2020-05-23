@@ -35,6 +35,5 @@ C = Capture, wait till certain card is shown
  these .pmd files are the files that actually do the drawing. I am still working on decoding these. But they mainly seem to consist of 4 byte integers.
 
 header:
-byte[1] = 001
-
-byte[2] = Number of segments
+- byte[1] = 001
+- byte[2] = Number of segments
