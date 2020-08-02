@@ -40,4 +40,13 @@ C = Capture, wait till certain card is shown
 
 header:
 - byte[1] = 001
-- byte[2] = Number of segments
+- byte[2-5] = Number of segments as Little endian integer
+- byte[6-9] = Number of point in the file as Little endian integer
+
+Data:
+read per 4 bytes
+If byte[1], [2], [3]  are 0, then lift arm. 
+if not read extra 4 bytes
+
+first 4 bytes are Little endian Float representing the angle of motor 1
+second 4 bytes are Little endian Float representing the angle of motor 1
