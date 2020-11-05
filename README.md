@@ -45,8 +45,7 @@ header:
 Segment Block - Repeat for amount of segments:
 - byte[4] = Number of points as Little endian integer
 - Array size of number of points
-    - byte[4] = PointX as Little endian float
-    - byte[4] = PointY as Little endian float
+    - byte[4] = Left Angle as Little endian float
+    - byte[4] = Right Angle as Little endian float
 
-first 4 bytes are Little endian Float representing the angle of motor 1
-second 4 bytes are Little endian Float representing the angle of motor 1
+![Motor Angles](quincy_motor_angles.jpg)
