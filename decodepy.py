@@ -34,8 +34,14 @@ def drawpmd(filename, outputscreen, drawcolor):
     segments = readInt(file)
     print ("Drawing {} with {} Segments".format(filename, segments))
 
-    scale = 4
+    scale = 40
     segcount = 0
+    offset = 200
+    scale2 = 10
+
+    for y in range(0,25):
+        pygame.draw.circle(outputscreen, (150, 155, 0), (offset , y*scale2), 2)
+
     while segcount < segments:
         segcount = segcount + 1
         points = readInt(file)
@@ -47,17 +53,16 @@ def drawpmd(filename, outputscreen, drawcolor):
             pointY = readFloat(file)
 
             ax, ay = coordcalc.angles_to_coord(pointX, pointY)
-            offset = 6
-            ax = ax + offset
+            ax = ax
             ay = ay
-            scale2 = 20
+
 
             print ("{}/{}: {} - {} = {} - {}".format(segcount, pointcount, pointX, pointY, ax, ay))
 
-            pygame.draw.circle(outputscreen, drawcolor, (int(pointX*scale), int(pointY*scale) ), 2)
-            pygame.draw.circle(outputscreen, (0,255,0), (int(ax * scale2), int(ay * scale2)), 2)
+            #pygame.draw.circle(outputscreen, drawcolor, (int(pointX*scale), int(pointY*scale) ), 2)
+            pygame.draw.circle(outputscreen, (0,255,0), (offset - int(ax * scale2), int(ay * scale2)), 2)
             pygame.display.flip()
-            time.sleep(0.001)
+            time.sleep(0.0001)
         pygame.display.flip()
         time.sleep(1)
 
@@ -67,9 +72,10 @@ def drawpmd(filename, outputscreen, drawcolor):
 screen.fill((0,0,0))
 color = (255,0,0)
 
-drawpmd("sd//testbur//S01.pmd", screen, color)
-#
-# drawpmd("sd//cup0000//LC.pmd", screen, color)
+#drawpmd("sd//testbur//S01.pmd", screen, color)
+drawpmd("sd//testbur//S02.pmd", screen, color)
+
+#drawpmd("sd//cup0000//LC.pmd", screen, color)
 # drawpmd("sd//cup0000//LU.pmd", screen, color)
 # drawpmd("sd//cup0000//LP.pmd", screen, color)
 #
@@ -80,9 +86,12 @@ drawpmd("sd//testbur//S01.pmd", screen, color)
 # drawpmd("sd//cup0000//S5.pmd", screen, color)
 # drawpmd("sd//cup0000//S6.pmd", screen, color)
 
-drawpmd("test.pmd", screen, color)
+# drawpmd("test.pmd", screen, color)
 
 pygame.display.flip()
+
+
+
 
 while True:
     for event in pygame.event.get():
