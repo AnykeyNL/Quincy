@@ -6,7 +6,7 @@ http://www.landzo.com/index.php?route=product/product&product_id=109
 The Quinzy seems to look a lot like the WEDRAW Drawing Robot, which seems to use RFIF instead of Camera/QR codes. If anyone has one of these, interesting to find out if they use some file formats.
 
 # Examples
-![Pickachu](https://www.instagram.com/p/CHYVtpEhsYd/)
+Pickachu: https://www.instagram.com/p/CHYVtpEhsYd/
 
 # Goal
 The Quincy robot artist comes with a set of cards that is can teach you to draw and speaks only one language. (in my case English). The robot program is run from an included Micro SD card. After my child drew gloves and a Squirrel he wanted to learn how to draw pokemons. As this is not build-in, he asked his dad (me) to hack his robot and teach it how to draw pokemons :-)
