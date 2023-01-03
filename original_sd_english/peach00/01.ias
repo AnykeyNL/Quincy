@@ -1,0 +1,15 @@
+{[P:/peach00/S00.snd][B:]}
+
+{[P:/peach00/S01.snd][D:/peach00/S1.pmd][B:]}
+{[P:/peach00/S02.snd][D:/peach00/S2.pmd][B:]}
+{[P:/peach00/S03.snd][D:/peach00/S3.pmd][B:]}
+{[P:/peach00/S04.snd][D:/peach00/S4.pmd][B:]}
+{[P:/peach00/S05.snd][D:/peach00/S5.pmd][B:]}
+
+{[P:/peach00/L00.snd]}
+
+{[C:p][a:/peach00/L01.snd][b:/Effects/WS.snd][c:/peach00/LP.pmd][e:/Effects/Tips/TipP.snd]}
+{[C:e][a:/peach00/L02.snd][b:/Effects/WS.snd][c:/peach00/LE.pmd][e:/Effects/Tips/TipE.snd]}
+{[C:a][a:/peach00/L03.snd][b:/Effects/WS.snd][c:/peach00/LA.pmd][e:/Effects/Tips/TipA.snd]}
+{[C:c][a:/peach00/L04.snd][b:/Effects/WS.snd][c:/peach00/LC.pmd][e:/Effects/Tips/TipC.snd]}
+{[C:h][a:/peach00/L05.snd][b:/Effects/WS.snd][c:/peach00/LH.pmd][e:/Effects/Tips/TipH.snd]}

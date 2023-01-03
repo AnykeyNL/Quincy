@@ -1,0 +1,17 @@
+{[P:/spoon00/S00.snd][B:]}
+
+{[P:/spoon00/S01.snd][D:/spoon00/S1.pmd][B:]}
+{[P:/spoon00/S02.snd][D:/spoon00/S2.pmd][B:]}
+{[P:/spoon00/S03.snd][D:/spoon00/S3.pmd][B:]}
+{[P:/spoon00/S04.snd][D:/spoon00/S4.pmd][B:]}
+{[P:/spoon00/S05.snd][D:/spoon00/S5.pmd][B:]}
+
+{[P:/spoon00/L00.snd]}
+
+{[C:s][a:/spoon00/L01.snd][b:/Effects/WS.snd][c:/spoon00/LS.pmd][e:/Effects/Tips/TipS.snd]}
+{[C:p][a:/spoon00/L02.snd][b:/Effects/WS.snd][c:/spoon00/LP.pmd][e:/Effects/Tips/TipP.snd]}
+{[C:o][a:/spoon00/L03.snd][b:/Effects/WS.snd][c:/spoon00/LO.pmd][e:/Effects/Tips/TipO.snd]}
+{[C:o][a:/spoon00/L04.snd][b:/Effects/WS.snd][c:/spoon00/LO2.pmd][e:/Effects/Tips/TipO.snd]}
+{[C:n][a:/spoon00/L05.snd][b:/Effects/WS.snd][c:/spoon00/LN.pmd][e:/Effects/Tips/TipN.snd]}
+
+{[P:/spoon00/L06.snd]}
