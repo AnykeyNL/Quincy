@@ -1,0 +1,30 @@
+117
+// The three numbers above are the content version. The program will check the content version.
+August 26, 2019 V1.1.0
+Add: ArmResetError.snd
+
+September 1, 2019 V1.1.1
+1.Fix the phonetic error of the first problem in yard.
+
+September 3, 2019 V1.1.2
+1. Add the first voice of Fox and adjust the second voice
+
+September 3, 2019 V1.1.3
+1.Squrial Step 16 Cut out the voice of step 17.
+2.fox adds the sixth step of the omission, and the subsequent steps are successively extended downward.
+3. Monkey adjusted the error of x and tail s upside down
+4. Lemon adjusted the problem of the reverse of the third and fourth steps
+
+September 6, 2019 V1.1.4
+1. Fix the problem of incomplete Pear's first speech
+
+September 9, 2019 V1.1.5
+1. Delete the last next sound of Snail Step 1 audio
+
+September 11, 2019 V1.1.6
+1. Add a test card: testimg, the card string corresponds to! Atestimg
+2. Add burn-in card: testbur, the card string corresponds to! Atestbur
+
+September 21, 2019 V1.1.7
+1. Add test mode audio
+2. Organize all effect sounds and categorize them into the Effects folder.
