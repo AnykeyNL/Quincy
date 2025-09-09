@@ -4,7 +4,7 @@ Opensource software for the Landzo Quincy Drawing Robot Artist
 ~~http://www.landzo.com/index.php?route=product/product&product_id=109~~
 ~~The company's website no longer seems to be active :-(~~
 
-The company's website is alive, but the URL is changed: https://www.landzo.com/product/quincy-arm-drawing-robot-educational-toy-for-kids-white-edition
+~~The company's website is alive, but the URL is changed: https://www.landzo.com/product/quincy-arm-drawing-robot-educational-toy-for-kids-white-edition~~
 
 The Quinzy seems to look a lot like the WEDRAW Drawing Robot, which seems to use RFIF instead of Camera/QR codes. If anyone has one of these, interesting to find out if they use some file formats.
 
