@@ -1,0 +1,16 @@
+{[P:/apple00/S00.snd][B:]}
+
+{[P:/apple00/S01.snd][D:/apple00/S1.pmd][B:]}
+{[P:/apple00/S02.snd][D:/apple00/S2.pmd][B:]}
+{[P:/apple00/S03.snd][D:/apple00/S3.pmd][B:]}
+{[P:/apple00/S04.snd][D:/apple00/S4.pmd][B:]}
+{[P:/apple00/S05.snd][D:/apple00/S5.pmd][B:]}
+
+{[P:/apple00/L00.snd]}
+
+{[C:p][a:/apple00/L01.snd][b:/Effects/WS.snd][c:/apple00/LP.pmd][e:/Effects/Tips/TipP.snd]}
+{[C:o][a:/apple00/L02.snd][b:/Effects/WS.snd][c:/apple00/LO.pmd][e:/Effects/Tips/TipO.snd]}
+{[C:m][a:/apple00/L03.snd][b:/Effects/WS.snd][c:/apple00/LM.pmd][e:/Effects/Tips/TipM.snd]}
+{[C:m][a:/apple00/L04.snd][b:/Effects/WS.snd][c:/apple00/LM2.pmd][e:/Effects/Tips/TipM.snd]}
+{[C:e][a:/apple00/L05.snd][b:/Effects/WS.snd][c:/apple00/LE.pmd][e:/Effects/Tips/TipE.snd]}
+
