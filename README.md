@@ -8,7 +8,7 @@ Opensource software for the Landzo Quincy Drawing Robot Artist
 
 The Quinzy seems to look a lot like the WEDRAW Drawing Robot, which seems to use RFIF instead of Camera/QR codes. If anyone has one of these, interesting to find out if they use some file formats.
 
-# Exemples
+# Examples
 Pickachu: https://www.instagram.com/p/CHYVtpEhsYd/
 
 # Online editor
